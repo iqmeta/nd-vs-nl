@@ -4,6 +4,10 @@ using System.Text;
 
 // LABEL DESIGN
 ThermalLabel tLabel = new ThermalLabel(UnitType.Mm, 50, 34);
+
+// WHATS MISSING FOR EXAMPLE - SO PRINT JOB NOWS HOW MANY LABELS TO PRINT / PAGING ETC:
+// tLabel.LabelsPrintOrReplicaQuantityDataField = nameof(Label.Qty);
+
 tLabel.LabelsPerRow = 2;
 tLabel.LabelsHorizontalGapLength = 2;
 
@@ -45,8 +49,15 @@ foreach (var dsRow in DataHelper.GetLabelData())
         ProgrammingLanguage = ProgrammingLanguage.ZPL,
         CommandsOptimizationEnabled = false
     };
+    // THIS IS BAD BECAUSE MULTIPLE PRINJOBS ARE MERGED INTO A SINGLE PRINTSTREAM
+    // WITH PREVENTS OPITIMIZATIONS ACROSS WHOLE PRINTSTREAM
+    // ALSO IT GENERATES MORE COMMANDS THAN NEEDED
+    // CAUSES WRONG PAGING WITH EMPTY LABELS ON ODD QUANTITIES
     sb.Append(pj.GetNativePrinterCommands(tLabel));
     sb.Append(Environment.NewLine);
+
+    //ANOTHER PROBLEM YOU CAN ONLY CREATE A PDF PER PRINTJOB.
+    //SO ALSO NEED TO MERGE PDF FILES IF YOU WANT A SINGLE PDF OUTPUT
 }
 
 var zpl = sb.ToString();
