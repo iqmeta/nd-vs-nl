@@ -16,8 +16,8 @@ return new List<Label>
 <a href="zpl-output-nicelabel.txt">zpl-output-nicelabel.txt</a> (3,54kb)<br>
 
 ## VERSIONS
-Neodynamic.SDK.ThermalLabel Version 14.0.25.701 (2025-10-16)
-NiceLabel 10.5 Build 21.5.0.11092 (2024-03-29)
+- Neodynamic.SDK.ThermalLabel Version 14.0.25.701 (2025-10-16)
+- NiceLabel 10.5 Build 21.5.0.11092 (2024-03-29)
 
 ## .NET Solution - 3 Projects ##
 - data (.NET 2.0 Standard DLL - as 100% same Datasource)
