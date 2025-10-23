@@ -5,7 +5,8 @@ using System.Text;
 // LABEL DESIGN
 ThermalLabel tLabel = new ThermalLabel(UnitType.Mm, 50, 34);
 
-// WHATS MISSING FOR EXAMPLE - SO PRINT JOB NOWS HOW MANY LABELS TO PRINT / PAGING ETC:
+// WHAT'S MISSING FOR EXAMPLE - THAT PRINT JOB KNOWS HOW MANY LABELS TO PRINT / PAGING ETC:
+// COMPARE NICELABEL PROJECT Program.cs Line 40 - Print Qty per Label/DataRow
 // tLabel.LabelsPrintOrReplicaQuantityDataField = nameof(Label.Qty);
 
 tLabel.LabelsPerRow = 2;
