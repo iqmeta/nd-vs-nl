@@ -15,6 +15,10 @@ return new List<Label>
 <a href="zpl-output-neodynamic.txt">zpl-output-neodynamic.txt</a> (41,58kb)<br>
 <a href="zpl-output-nicelabel.txt">zpl-output-nicelabel.txt</a> (3,54kb)<br>
 
+## VERSIONS
+Neodynamic.SDK.ThermalLabel Version 14.0.25.701 (2025-10-16)
+NiceLabel 10.5 Build 21.5.0.11092 (2024-03-29)
+
 ## .NET Solution - 3 Projects ##
 - data (.NET 2.0 Standard DLL - as 100% same Datasource)
 - nice (Nicelabel Console App .NET Framework 4.8)
@@ -25,7 +29,7 @@ return new List<Label>
 |  | NiceLabel | NeoDynamic  
 | ------------- | ------------- | ------------- |
 | Speed of rendering | ⛔ 1.4s  |  ✅ 250ms   | 
-| Output Quality (see images below)  |  ✅ correct: one print job with qty per label data   | ⛔ wrong: Not right paged,<br>because of manual merge of multiple print jobs to achieved some kind of qtc clone  | 
+| Output Quality (see images below)  |  ✅ correct: one print job with qty per label data   | ⛔ wrong: Not right paged,<br>because of manual merge of multiple print jobs to achieved some kind of qty clone  | 
 | Size  |  ✅ 3,5kb using PQ  | ⛔ 41,58kb not using PQ  | 
 |  |  |  |
 |  | **5x slower but does it right**  | **over 10x larger with wrong output** |
