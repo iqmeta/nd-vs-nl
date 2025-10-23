@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="data/data.csproj" Id="c2570fec-e86f-4557-a814-6f9cdc137317" />
   <Project Path="neo/neo.csproj" />
+  <Project Path="nice/nice.csproj" Id="71fe7fd0-ecba-453c-96f8-5733b7e685b5" />
 </Solution>
