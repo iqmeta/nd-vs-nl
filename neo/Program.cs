@@ -5,6 +5,7 @@ using System.Text;
 // LABEL DESIGN
 ThermalLabel tLabel = new ThermalLabel(UnitType.Mm, 50, 34);
 
+
 // WHAT'S MISSING FOR EXAMPLE - THAT PRINT JOB KNOWS HOW MANY LABELS TO PRINT / PAGING ETC:
 // COMPARE NICELABEL PROJECT Program.cs Line 40 - Print Qty per Label/DataRow
 // tLabel.LabelsPrintOrReplicaQuantityDataField = nameof(Label.Qty);
@@ -14,8 +15,8 @@ tLabel.LabelsHorizontalGapLength = 2;
 
 tLabel.Items.Add(new BarcodeItem()
 {
-    Symbology = BarcodeSymbology.Ean13,    
-    DataField = nameof(Label.Ean13),        
+    Symbology = BarcodeSymbology.Ean13,
+    DataField = nameof(Label.Ean13),
     X = 2.0,
     Y = 2.0,
     Width = tLabel.Width - 5,
@@ -24,7 +25,8 @@ tLabel.Items.Add(new BarcodeItem()
     BarWidth = 0.5,
     EanUpcGuardBarHeight = 7,
     //QuietZone = { Bottom = 0.5, Left = 0, Right = 0.0, Top = 0.5 },
-    BorderThickness = new FrameThickness(0.1)
+    //BorderThickness = new FrameThickness(0.1)
+    PrintAsResidentElement = true
 });
 
 tLabel.Items.Add(new TextItem
@@ -34,7 +36,7 @@ tLabel.Items.Add(new TextItem
     Y = 20,
     Width = tLabel.Width - 5,
     Height = 10,
-    BorderThickness = new FrameThickness(0.3),
+    //BorderThickness = new FrameThickness(0.3),
     Font = { Size = 14 },
 });
 
