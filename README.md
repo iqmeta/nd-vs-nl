@@ -32,7 +32,7 @@ return new List<Label>
 | Output Quality (see images below)  |  ✅ correct: one print job with qty per label data   | ⛔ wrong: Not right paged,<br>because of manual merge of multiple print jobs to achieved some kind of qty clone  | 
 | Size  |  ⛔ 3,5kb using PQ  |  ✅ 1,46kb using PQ  | 
 |  |  |  |
-|  | **5x slower but does it right**  | **over 10x larger with wrong output** |
+|  | **5x slower but does it right**  | **wrong output** |
 
 ## NiceLabel
 After 1477,7476 ms ZPL Printstream ready in memory with 3,54 kb<br>
@@ -40,7 +40,7 @@ After 1477,7476 ms ZPL Printstream ready in memory with 3,54 kb<br>
 
 
 ## NeoDynamic
-After 252,2687 ms ZPL Printstream ready in memory with 41,58 kb<br>
+After 275,635 ms ZPL Printstream ready in memory with 1,46 kb<br>
 <img src="result-neodynamic.jpg" width="600"/>
 
 ## The comparable design
