@@ -70,3 +70,4 @@ var total = end - start;
 Console.Write($"After {total.TotalMilliseconds} ms ZPL Printstream ready in memory with {outBytes.Length / 1024.0:F2} kb");
 System.IO.File.WriteAllBytes("neodynamic.zpl", outBytes);
 Console.Read();
+

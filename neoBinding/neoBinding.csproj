@@ -11,8 +11,4 @@
     <PackageReference Include="Neodynamic.SDK.ThermalLabel" Version="14.0.25.1209" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\data\data.csproj" />
-  </ItemGroup>
-
 </Project>
